@@ -23,6 +23,6 @@ else
     Console.WriteLine("Tyvärr, du har inte vunnit den här gången.");
 }
     Console.WriteLine("Vill du spela igen? (ja/nej)");
-    playagain = Console.ReadLine().ToLower();
+    playagain = (Console.ReadLine() ?? "").ToLower();
 
 }
