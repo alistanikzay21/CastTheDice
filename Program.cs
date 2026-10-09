@@ -1,4 +1,8 @@
 ﻿Random random = new Random(); 
+string playagain = "ja";
+
+while (playagain == "ja")
+{
 
 int dice1 = random.Next(1,7);
 int dice2 = random.Next(1,7);
@@ -16,5 +20,9 @@ if (sum == 12)
 }
 else
 {
-    Console.WriteLine("Tyvärr, du har inte vunnit den här gången."); 
+    Console.WriteLine("Tyvärr, du har inte vunnit den här gången.");
+}
+    Console.WriteLine("Vill du spela igen? (ja/nej)");
+    playagain = Console.ReadLine().ToLower();
+
 }
